@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+
 
 <style>/* Stylesheet 3: */
 body {
@@ -68,34 +70,32 @@ a {
 a:hover {
     color: #84c754;
 }
-</style>
 
+</style>
 
 </head>
 <body>
 
 <div class="container wrapper">
   <div id="top">
-    <h1>Welcome to 이준재's Homepage</h1>
+    <h1>Welcome to 이준재's Homepage (22200582)</h1>
     <p>Use the menu to select different Stylesheets</p>
   </div>
   <div class="wrapper">
    <div id="menubar">
      <ul id="menulist">
-       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
-       <li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+       
        <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
-       <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-       <li class="menuitem" onclick="noStyles()">No Stylesheet
-     </ul>
+       
+       
     </div>
     <div id="main">
       <h1>Same Page Different Stylesheets</h1>
       <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-      <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
-      <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+      <!-- <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
+      <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>, -->
       <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
-      <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+      <!-- <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>. -->
       </p>
        <h2>No Styles</h2>
       <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
@@ -114,10 +114,10 @@ a:hover {
 
 <script>
 function noStyles() {
-    document.styleSheets[0].disabled = true;
-    document.styleSheets[1].disabled = true;
+    // document.styleSheets[0].disabled = true;
+    // document.styleSheets[1].disabled = true;
     document.styleSheets[2].disabled = true;
-    document.styleSheets[3].disabled = true;
+    //document.styleSheets[3].disabled = true;
 }
 
 function reStyle(n) {
